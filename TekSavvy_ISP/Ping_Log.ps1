@@ -69,12 +69,6 @@ Write-Host " --> Done!" -ForegroundColor Green -BackgroundColor Black
 
 
 
-Function Ping8888 {
-Report
-
-ping 8.8.8.8 -t >> $Log
-}
-
 
 
 Function PingQ8 {
@@ -107,7 +101,14 @@ PingQ8
 }
 
 
-<#
+
+Function Status {
+$StepTotal = "6"
+Write-Host "Step [$StepCount] of [$StepTotal]" -Foreground Cyan -Background Black
+}
+
+
+<# This did report but I can see how TekSavvy would cry foul as it had poor timestamping beyond the date modified of the log file
 Function PingQ8 {
 Report
 
@@ -124,10 +125,15 @@ PingQ8
 }
 #>
 
-Function Status {
-$StepTotal = "6"
-Write-Host "Step [$StepCount] of [$StepTotal]" -Foreground Cyan -Background Black
+<# This did not report as well as I intended
+Function Ping8888 {
+Report
+
+ping 8.8.8.8 -t >> $Log
 }
+#> 
+
+# ACTIONS #
 
 $StepCount = "1"
 Status
