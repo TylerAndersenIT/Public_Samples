@@ -68,7 +68,7 @@ Please make a selection"
   }
 }
 until ( $Selection -notmatch "X" )
-
+}
 
 Write-Host "Script Completed!" -ForegroundColor Green -BackgroundColor Black
 Start-Sleep -Seconds 5
