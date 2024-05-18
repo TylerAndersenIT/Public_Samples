@@ -1,0 +1,1 @@
+powershell ./HiddenPS1Script.ps1

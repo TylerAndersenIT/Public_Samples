@@ -1,0 +1,1 @@
+wscript.exe ".\HiddenPS1Script.vbs" ".\HiddenPS1Script.bat"

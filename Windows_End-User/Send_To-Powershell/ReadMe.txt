@@ -1,0 +1,1 @@
+This script adds the option to the right-click contect menu 'Send To > Powershell' and 'Send To > Powershell(x86)'
