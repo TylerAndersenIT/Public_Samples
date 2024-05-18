@@ -1,0 +1,13 @@
+Save this one line of text as file Run_Invisible.vbs:
+
+    CreateObject("Wscript.Shell").Run """" & WScript.Arguments(0) & """", 0, False
+
+To run any program or batch file invisibly, use it like this:
+
+    wscript.exe "C:\Scripts_Folder_You_Use\Run_Invisible.vbs" "C:\Some_Other_Folder\MyBatchFile.bat"
+
+To also be able to pass-on/relay a list of arguments use only two double quotes
+
+    CreateObject("Wscript.Shell").Run "" & WScript.Arguments(0) & "", 0, False
+
+Example: Run_Invisible.vbs "Kill.vbs ME.exe"
