@@ -1,7 +1,7 @@
 ﻿<#
 TekSavvy has asked me without knowing I have any idea about technology, proof I have a bad coax line to my house before they will send a field tech.
-Fact of the matter is moisture is in the line. Every time humidity peaks 80% or higher there is significant package loss.
-So I have made this tool with a quote from them of what they want to see.
+Fact of the matter is moisture is in the line. Every time humidity peaks 80% or higher there is significant packet loss.
+I have made this tool with a quote from them of what they want to see.
 This script runs on a scheduled task that runs for 23 hours 59 minutes 59 seconds until it is killed and restarted.
 Every action is logged to prove to my ISP they need to take action for their paying customers.
 It is really silly that this is required to get help in the year 2024...
